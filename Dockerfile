@@ -4,7 +4,7 @@ WORKDIR /app
 COPY package*.json ./
 RUN yarn add @uniswap/widgets
 COPY . .
-RUN yarn start
+RUN yarn build
  
 # Stage 1 - Serve Frontend Assets
 # FROM nginx:1.19.10
