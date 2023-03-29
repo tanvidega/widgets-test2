@@ -2,7 +2,7 @@ FROM node:18.14.0 as build
  
 WORKDIR /app
 COPY package*.json ./
-RUN yarn install
+RUN yarn add @uniswap/widgets
 COPY . .
 RUN yarn start
  
